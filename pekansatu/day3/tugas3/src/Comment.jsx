@@ -15,4 +15,4 @@ function Comment({ user, text }) {
   );
 }
 
-export default Comment; 
+export default Comment;

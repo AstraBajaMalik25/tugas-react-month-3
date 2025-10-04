@@ -1,0 +1,16 @@
+
+.responsive-box {
+  background-color: #3498db;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .responsive-box {
+    background-color: #2ecc71;
+    padding: 20px;
+  }
+}
