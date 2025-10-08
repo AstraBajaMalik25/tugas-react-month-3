@@ -1,56 +1,73 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function TodoList() {
+function Todolist() {
   const [todos, setTodos] = useState([
-    { id: 1, text: 'Belajar React Hooks', completed: false },
-    { id: 2, text: 'Membangun Aplikasi Todo', completed: false },
+    { id: 1, text: "Belajar React Hooks", completed: false },
+    { id: 2, text: "Membangun Aplikasi Todo", completed: false },
   ]);
-  const [newTodoText, setNewTodoText] = useState('');
+  const [newTodoText, setNewTodoText] = useState("");
 
   const addTodo = (e) => {
     e.preventDefault();
-    if (newTodoText.trim() === '') return;
-
-    const newTodo = {
-      id: todos.length + 1,
-      text: newTodoText,
-      completed: false,
-    };
-    setTodos(prevTodos => [...prevTodos, newTodo]); // Tambahkan todo baru
-    setNewTodoText('');
+    if (newTodoText.trim() === "") return;
+    setTodos([
+      ...todos,
+      { id: Date.now(), text: newTodoText, completed: false },
+    ]);
+    setNewTodoText("");
   };
 
   const toggleTodo = (id) => {
-    setTodos(prevTodos =>
-      prevTodos.map(todo =>
+    setTodos(
+      todos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
       )
     );
   };
 
   const deleteTodo = (id) => {
-    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id)); // Hapus todo
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
-    <div>
-      <h2>Daftar Makanan</h2>
-      <form onSubmit={addTodo}>
+    <div className="max-w-md mx-auto mt-10 bg-gray-800 text-white p-6 rounded-2xl shadow-lg">
+      <h2 className="text-2xl font-bold mb-4 text-center">🍜 Daftar Makanan</h2>
+
+      <form onSubmit={addTodo} className="flex gap-2 mb-4">
         <input
           type="text"
           value={newTodoText}
           onChange={(e) => setNewTodoText(e.target.value)}
           placeholder="Tambahkan menu baru..."
+          className="flex-1 p-2 rounded-lg text-black outline-none focus:ring-2 focus:ring-orange-400"
         />
-        <button type="submit">Tambah</button>
+        <button
+          type="submit"
+          className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg font-semibold transition-all"
+        >
+          Tambah
+        </button>
       </form>
-      <ul>
-        {todos.map(todo => (
-          <li key={todo.id} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-            <span onClick={() => toggleTodo(todo.id)} style={{ cursor: 'pointer' }}>
+
+      <ul className="space-y-3">
+        {todos.map((todo) => (
+          <li
+            key={todo.id}
+            className="flex justify-between items-center bg-gray-700 p-3 rounded-lg hover:bg-gray-600 transition"
+          >
+            <span
+              onClick={() => toggleTodo(todo.id)}
+              style={{
+                textDecoration: todo.completed ? "line-through" : "none",
+              }}
+              className="cursor-pointer flex-1"
+            >
               {todo.text}
             </span>
-            <button onClick={() => deleteTodo(todo.id)} style={{ marginLeft: '10px' }}>
+            <button
+              onClick={() => deleteTodo(todo.id)}
+              className="bg-red-500 hover:bg-red-600 px-3 py-1 rounded-md transition-all"
+            >
               Hapus
             </button>
           </li>
@@ -60,4 +77,4 @@ function TodoList() {
   );
 }
 
-export default TodoList;
+export default Todolist;

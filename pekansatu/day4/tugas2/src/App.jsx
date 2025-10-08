@@ -1,13 +1,12 @@
 import React from 'react';
-import './App.css';
+import ResponsiveBox from './ResponsiveBox';
 
-function ResponsiveBox() {
+function App() {
   return (
-    <div className="responsive-box">
-      <h2>Halo, saya komponen responsif!</h2>
-      <p>Coba ubah ukuran layar untuk melihat perubahannya.</p>
+    <div style={{ padding: "20px" }}>
+      <ResponsiveBox />
     </div>
   );
 }
 
-export default ResponsiveBox; 
+export default App;
