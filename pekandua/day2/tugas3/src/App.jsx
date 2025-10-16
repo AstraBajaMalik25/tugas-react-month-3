@@ -19,7 +19,7 @@ function App({ status }) {
       message = "Status tidak diketahui.";
   }
 
-  return <p>{message}</p>;  
+  return <p>{message}</p>;
 }
  
 

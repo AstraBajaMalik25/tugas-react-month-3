@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20 }}> 
       <h1>JSON Manipulation Example</h1>
       <ul>
         {users.map((u, i) => (

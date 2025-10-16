@@ -15,7 +15,7 @@ function App() {
       } catch (err) {
         setError(err);
       } finally {
-        setLoading(false);
+        setLoading(false);x``
       }
     };
     fetchData();
