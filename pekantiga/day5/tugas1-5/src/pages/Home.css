@@ -1,0 +1,173 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #dbeafe;
+  background: linear-gradient(180deg, #dbeafe, #c7d2fe, #bfdbfe);
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+/* HERO SECTION */
+.hero h1 {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+.hero p {
+  color: #475569;
+  font-size: 1.1rem;
+  max-width: 550px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+/* FEATURES BOX */
+.features {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 35px 40px;
+  margin-top: 60px;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+  width: 90%;
+  max-width: 480px;
+}
+
+.features h2 {
+  color: #3b82f6;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  color: #1e293b;
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.learned {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.learned h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.learned ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learned li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+.about-section {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.about-section h2 {
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  color: rgba(20, 40, 60, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.about-card h3 {
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(25, 30, 50, 0.9);
+}
+
+.about-card h3 {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.more-about-section h2 {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.about-title {
+  color: #2c6fbb; /* biru lembut agar kontras tapi tetap kalem */
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}

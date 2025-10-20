@@ -1,0 +1,60 @@
+.sidebar {
+  background: linear-gradient(180deg, #3170b5, #2e6ca8);
+  color: white;
+  width: 260px;
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* biar social icons di bawah */
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn {
+  background: #1e5a94;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar-content {
+  flex: 1;
+}
+
+.sidebar-content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-content p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+/* 🌐 Social icons at bottom */
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.4rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffce47;
+  transform: scale(1.2);
+}

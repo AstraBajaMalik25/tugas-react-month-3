@@ -41,7 +41,7 @@ function useChiikawaStore() {
       name: "Hachiware Keychain",
       price: 8,
       image: "https://i.imgur.com/jy3zTgC.png",
-    },
+    },x
   ];
 
   const addToCart = (product) => setCart([...cart, product]);

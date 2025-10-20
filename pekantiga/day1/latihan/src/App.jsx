@@ -6,7 +6,7 @@ import UserInfoDisplay from './UserInfoDisplay';
 import ThemedButton from './ThemedButton'; // Consumer
 
 function App() {
-  return (
+  return ( 
     <ThemeProvider> {/* Provider pertama */}
       <UserProvider> {/* Provider kedua */}
         <div style={{ padding: '20px', textAlign: 'center' }}>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

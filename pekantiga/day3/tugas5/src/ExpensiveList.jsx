@@ -3,7 +3,7 @@ import React from "react";
 export default function ExpensiveList({ count }) {
   console.log("🔴 Rendering ExpensiveList...");
 
-  // Simulasi perhitungan berat
+
   const numbers = Array.from({ length: 5000 }, (_, i) => i + count);
   const total = numbers.reduce((a, b) => a + b, 0);
 

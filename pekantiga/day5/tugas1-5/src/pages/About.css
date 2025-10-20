@@ -1,0 +1,71 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+  color: #0d1b2a;
+  background: linear-gradient(to bottom right, #c7dcf2, #b2cbe8);
+}
+
+.about-content {
+  max-width: 850px;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
+}
+
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  color: #0d1b2a;
+}
+
+.more-about {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 80, 160, 0.1);
+}
+
+.more-about h2 {
+  color: #1565c0;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 70, 140, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 70, 140, 0.15);
+}
+
+.card h3 {
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #0d1b2a;
+  line-height: 1.6;
+}

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Child from "./Child";
 
-// Tugas 1: Implementasi React.memo
-// Tujuan: mencegah re-render jika props tidak berubah
-
 export default function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
