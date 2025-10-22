@@ -3,4 +3,4 @@
 styling dibantu Ai
 
 
-link vite -> error
+screenshot dan video ada dalam folder "media"
